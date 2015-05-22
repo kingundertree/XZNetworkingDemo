@@ -1,0 +1,59 @@
+{
+  "name": "XZNetworking",
+  "version": "1.0",
+  "summary": "",
+  "description": "",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "homepage": "https://github.com/kingundertree/XZNetworking",
+  "license": "MIT (example)",
+  "authors": {
+    "徐山": "kingundertree@163.com"
+  },
+  "source": {
+    "git": "https://github.com/kingundertree/XZNetworking.git"
+  },
+  "source_files": [
+    "XZNetworking",
+    "XZNetworking/XZNetworking/*.{h,m}"
+  ],
+  "subspecs": [
+    {
+      "name": "Assist",
+      "source_files": "XZNetworking/XZNetworking/Assist/*.{h,m}"
+    },
+    {
+      "name": "Category",
+      "source_files": "XZNetworking/XZNetworking/Category/*.{h,m}",
+      "frameworks": "Security"
+    },
+    {
+      "name": "Components",
+      "source_files": "XZNetworking/XZNetworking/Components/*.{h,m}",
+      "frameworks": "SystemConfiguration"
+    },
+    {
+      "name": "Debug",
+      "source_files": "XZNetworking/XZNetworking/Debug/*.{h,m}"
+    },
+    {
+      "name": "XZNetService",
+      "source_files": "XZNetworking/XZNetworking/XZNetService/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "ServiceConfig",
+          "source_files": "XZNetworking/XZNetworking/XZNetService/ServiceConfig/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "XZResponse",
+      "source_files": "XZNetworking/XZNetworking/XZResponse/*.{h,m}"
+    },
+    {
+      "name": "XZSignatureGenerator",
+      "source_files": "XZNetworking/XZNetworking/XZSignatureGenerator/*.{h,m}"
+    }
+  ]
+}
